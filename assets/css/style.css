@@ -1,7 +1,7 @@
 .paises-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 40px;
     justify-content: center;
     max-width: 500px;
     margin: 40px auto 0 auto;
@@ -10,6 +10,7 @@
 
 .bandeira{
     border: 3px solid black;
+    transition: transform 200ms ease-in-out;
 }
 
 .container{
@@ -31,15 +32,23 @@
     font-size: 18px;
     position: relative;
 }
-.elemento1{
+.nomedosite{
     border: 3px solid black;
-    padding: 2rem;
+    padding: 20px;
+    background-color: rgb(34 34 34);
+    color: white;
 }
-.elemento2{
-    border: 3px solid black;
-    padding: 2rem;
+.botao{
+    background-color: rgb(66, 20, 126);
+    padding: 20px;
+    width: 200px;
+    color: white;
+    border-radius: 0;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 0px black;
 }
-.elemento3{
-    border: 3px solid black;
-    padding: 2rem;
+.bandeira:hover {
+    transform: scale(1.05);
 }
